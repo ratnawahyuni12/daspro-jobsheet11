@@ -41,3 +41,9 @@ System.out.println("Penonton pada baris ke-3: ");
 for (int i = 0; i < penonton[2].length; i++) {
     System.out.println(penonton[2][i]);
 }
+8. Modifikasi kode program pada pertanyaan 7 menjadi perulangan dengan foreach loop. Compile, run, lalu lakukan amati hasilnya.
+System.out.println("Penonton pada baris ke-3: ");
+
+for (String i : penonton[2]) {
+    System.out.println(i);
+}
