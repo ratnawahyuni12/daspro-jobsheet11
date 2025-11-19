@@ -53,3 +53,5 @@ for (int i = 0; i < penonton.length; i++) {
 }
 10. Menurut anda, apa kekurangan dan kelebihan foreach loop dibandingkan dengan for loop?
 Jawab : 
+a. kekurangan : tidak bisa mengakses indeks secara langsung, tidak bisa mengubah elemen array secara langsung, tidak cocok untuk array 2D atau struktur kompleks, tidak bisa mengontrol langkah(step).
+b. kelebihan : lebih sederhana dan mudah dibaca, mengurangi kemungkinan error, cocok untuk membaca semua elemen. 
