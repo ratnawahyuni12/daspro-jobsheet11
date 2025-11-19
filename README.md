@@ -47,3 +47,7 @@ System.out.println("Penonton pada baris ke-3: ");
 for (String i : penonton[2]) {
     System.out.println(i);
 }
+9. Modifikasi kembali kode program pada langkah 11 untuk menampilkan nama penonton untuk setiap baris. Compile dan run program kemudian amati hasilnya.
+for (int i = 0; i < penonton.length; i++) {
+    System.out.println("Penonton pada baris ke-" + (i+1) + ": " + String.join(", ", penonton[i]));
+}
