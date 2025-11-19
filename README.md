@@ -61,3 +61,7 @@ Jawab : di dalam java, indeks selalu dimulai dari 0. sehingga, indeks baris maks
 Jawab : karena jumlah kolom pada array penonton adalah 2 dan indeks selalu dimulai dari 0 maka indeks kolom maksimal untuk array penonton adalah 1.
 13. Apa fungsi dari String.join()?
 Jawab : String.java() digunakan untuk menggabungkan beberapa String menjadi satu String, dengan pemisah (delimiter) tertentu. String.join() digunakan pada saat menampilkan daftar nama menjadi 1 baris, menggabungkan kata menjadi kalimat, menggabungkan data untuk output, dan membuat format teks tertentu.
+
+Pertanyaan Percobaan 2
+1. Apakah pengisian elemen array dari scanner harus dilakukan secara berurutan mulai dari indeks ke-0? Jelaskan!
+Jawab : tidak, pengisian elemen array dari Scanner tidak harus dilakukan secara berurutan mulai dari indeks ke-0. namun, tetap disarankan untuk memasukkannya secara berurutan agar tidak ada nilai null, data rapi, program mudah dibaca, dan tidak terjadi error karena akses elemen kosong.
