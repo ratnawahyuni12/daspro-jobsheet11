@@ -29,3 +29,9 @@ System.out.println(penonton.length);
 for (int i = 0; i < penonton.length; i++) {
     System.out.println("Panjang baris ke-" + (i+1) + ": " + penonton[i].length);
 }
+6. Modifikasi kode program pada pertanyaan 5 untuk menampilkan panjang setiap baris pada array menggunakan foreach loop. Compile, run, lalu amati hasilnya.
+System.out.println(penonton.length);
+
+for (String[] barisPenonton : penonton) {
+    System.out.println("Panjang baris: " + barisPenonton.length);
+}
