@@ -55,3 +55,5 @@ for (int i = 0; i < penonton.length; i++) {
 Jawab : 
 a. kekurangan : tidak bisa mengakses indeks secara langsung, tidak bisa mengubah elemen array secara langsung, tidak cocok untuk array 2D atau struktur kompleks, tidak bisa mengontrol langkah(step).
 b. kelebihan : lebih sederhana dan mudah dibaca, mengurangi kemungkinan error, cocok untuk membaca semua elemen. 
+11. Berapa indeks baris maksimal untuk array penonton?
+Jawab : di dalam java, indeks selalu dimulai dari 0. sehingga, indeks baris maksimal untuk array penonton adalah 3.
