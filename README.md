@@ -59,3 +59,5 @@ b. kelebihan : lebih sederhana dan mudah dibaca, mengurangi kemungkinan error, c
 Jawab : di dalam java, indeks selalu dimulai dari 0. sehingga, indeks baris maksimal untuk array penonton adalah 3.
 12. Berapa indeks kolom maksimal untuk array penonton?
 Jawab : karena jumlah kolom pada array penonton adalah 2 dan indeks selalu dimulai dari 0 maka indeks kolom maksimal untuk array penonton adalah 1.
+13. Apa fungsi dari String.join()?
+Jawab : String.java() digunakan untuk menggabungkan beberapa String menjadi satu String, dengan pemisah (delimiter) tertentu. String.join() digunakan pada saat menampilkan daftar nama menjadi 1 baris, menggabungkan kata menjadi kalimat, menggabungkan data untuk output, dan membuat format teks tertentu.
