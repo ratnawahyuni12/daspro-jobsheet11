@@ -65,3 +65,7 @@ Jawab : String.java() digunakan untuk menggabungkan beberapa String menjadi satu
 Pertanyaan Percobaan 2
 1. Apakah pengisian elemen array dari scanner harus dilakukan secara berurutan mulai dari indeks ke-0? Jelaskan!
 Jawab : tidak, pengisian elemen array dari Scanner tidak harus dilakukan secara berurutan mulai dari indeks ke-0. namun, tetap disarankan untuk memasukkannya secara berurutan agar tidak ada nilai null, data rapi, program mudah dibaca, dan tidak terjadi error karena akses elemen kosong.
+2. Modifikasi kode program untuk memberikan opsi menu sebagai berikut:
+- Menu 1: Input data penonton
+- Menu 2: Tampilkan daftar penonton
+- Menu 3: Exit
