@@ -23,3 +23,9 @@ System.out.println(penonton[3].length);
 Jelaskan fungsi dari penonton.length dan penonton[0].length!
 Apakah penonton[0].length, penonton[1].length, penonton[2].length, dan penonton[3].length memiliki nilai yang sama? Mengapa?
 Jawab : penonton.length digunakan untuk mengetahui jumlah baris pada array 2 dimensi. namun, penonton[0].length digunakan untuk mengetahui jumlah kolom pada baris ke-0. selanjutnya, penonton[0].length, penonton[1].length, penonton[2].length, dan penonton[3].length memiliki nilai yang sama, yaitu 2.
+5. Modifikasi kode program pada pertanyaan 4 untuk menampilkan panjang setiap baris pada array menggunakan for loop. Compile, run, lalu amati hasilnya.
+System.out.println(penonton.length);
+
+for (int i = 0; i < penonton.length; i++) {
+    System.out.println("Panjang baris ke-" + (i+1) + ": " + penonton[i].length);
+}
