@@ -35,3 +35,9 @@ System.out.println(penonton.length);
 for (String[] barisPenonton : penonton) {
     System.out.println("Panjang baris: " + barisPenonton.length);
 }
+7. Tambahkan kode program untuk menampilkan nama penonton pada baris ke-3 menggunakan for loop. Complile, run, lalu amati hasilnya.
+System.out.println("Penonton pada baris ke-3: ");
+
+for (int i = 0; i < penonton[2].length; i++) {
+    System.out.println(penonton[2][i]);
+}
