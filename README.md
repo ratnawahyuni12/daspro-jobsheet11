@@ -57,3 +57,5 @@ a. kekurangan : tidak bisa mengakses indeks secara langsung, tidak bisa mengubah
 b. kelebihan : lebih sederhana dan mudah dibaca, mengurangi kemungkinan error, cocok untuk membaca semua elemen. 
 11. Berapa indeks baris maksimal untuk array penonton?
 Jawab : di dalam java, indeks selalu dimulai dari 0. sehingga, indeks baris maksimal untuk array penonton adalah 3.
+12. Berapa indeks kolom maksimal untuk array penonton?
+Jawab : karena jumlah kolom pada array penonton adalah 2 dan indeks selalu dimulai dari 0 maka indeks kolom maksimal untuk array penonton adalah 1.
