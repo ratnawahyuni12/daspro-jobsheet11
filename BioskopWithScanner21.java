@@ -3,29 +3,70 @@ public class BioskopWithScanner21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int baris, kolom;
-        String nama, next;
+        int baris, kolom, menu;
+        String nama;
 
         String[][] penonton = new String[4][2];
 
         while (true) {
-            System.out.print("Masukkan nama: ");
-            nama = sc.nextLine();
-            System.out.print("Masukkan baris: ");
-            baris = sc.nextInt();
-            System.out.print("Masukkan kolom: ");
-            kolom = sc.nextInt();
+            System.out.println("===== OPSI MENU BIOSKOP =====");
+            System.out.println();
+            System.out.println("1. Input data penonton");
+            System.out.println("2. Tampilkan daftar penonton");
+            System.out.println("3. Exit");
+            System.out.println();
+            System.out.print("Pilih menu: ");
+            menu = sc.nextInt();
             sc.nextLine();
+            System.out.println();
 
-            penonton[baris-1][kolom-1] = nama;
+            switch (menu) {
+                case 1:
+                    // input data penonton
+                    System.out.println();
+                    System.out.println("===== INPUT DATA PENONTON =====");
+                    System.out.print("Masukkan nama: ");
+                    nama = sc.nextLine();
+                    System.out.print("Masukkan baris (1-4): ");
+                    baris = sc.nextInt();
+                    System.out.print("Masukkan kolom (1-2): ");
+                    kolom = sc.nextInt();
 
-            System.out.print("Input penonton lainnya? (y/n): ");
-            next = sc.nextLine();
+                    // validasi input data penonton
+                    if (baris < 1 || baris > 4 || kolom < 1 || kolom > 2) {
+                        System.out.println("Posisi kursi tidak valid!");
+                    } else if (penonton[baris-1][kolom-1] != null) {
+                        System.out.println("Kursi sudah terisi!");
+                    } else {
+                        penonton[baris-1][kolom-1] = nama;
+                        System.out.println("Data penonton berhasil ditambahkan.");
+                    }
+                    System.out.println();
+                    break;
 
-            if (next.equalsIgnoreCase("n")) {
-                break;
+                case 2:
+                    // tampilkan data penonton
+                    System.out.println("===== DAFTAR PENONTON =====");
+                    for (int i = 0; i < penonton.length; i++) {
+                        for (int j = 0; j < penonton[i].length; j++) {
+                            String isi = (penonton[i][j] == null) ? "---" : penonton[i][j];
+                            System.out.println("Baris " + (i+1) + " Kolom " + (j+1) + ": " + isi);
+                        }
+                    }
+                    System.out.println();
+                    break;
+                    
+                case 3:
+                    // exit
+                    System.out.println("===== EXIT =====");
+                    System.out.println("Terima kasih! Program selesai.");
+                    sc.close();
+                    return;
+
+                default: 
+                System.out.println();
+                System.out.println("Menu tidak valid!");
             }
         }
-        sc.close();
     }
 }
