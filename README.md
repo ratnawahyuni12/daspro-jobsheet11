@@ -86,3 +86,5 @@ Jawab : nilai default untuk elemen pada array dengan tipe data int adalah 0.
 for (int i = 0; i < myNumbers.length; i++) {
     System.out.println("Panjang baris ke-" + (i+1) + ": " + myNumbers[i].length);
 }
+5. Array myNumbers memiliki length berbeda untuk setiap barisnya. Apakah panjang array dapat dimodifikasi setelah diinstansiasi?
+Jawab : tidak bisa. setelah sebuah array di Java dibuat (diinstansiasi), panjang array tersebut bersifat tetap (fixed) dan tidak dapat diubah. Jika ingin mengubah panjangnya, harus membuat array baru dan menggantikan array lama, bukan memodifikasinya.
