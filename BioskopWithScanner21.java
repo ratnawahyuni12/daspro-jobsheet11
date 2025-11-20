@@ -27,34 +27,40 @@ public class BioskopWithScanner21 {
                     System.out.println("===== INPUT DATA PENONTON =====");
                     System.out.print("Masukkan nama: ");
                     nama = sc.nextLine();
-                    System.out.print("Masukkan baris (1-4): ");
-                    baris = sc.nextInt();
-                    System.out.print("Masukkan kolom (1-2): ");
-                    kolom = sc.nextInt();
 
-                    // validasi nomor kursi
-                    if (baris < 1 || baris > 4) {
-                        System.out.println("Baris tidak tersedia, hanya tersedia di rentang 1-4 saja!");
-                        System.out.println();
-                        break;
-                    }
+                    while (true) {
+                        System.out.print("Masukkan baris (1-4): ");
+                        baris = sc.nextInt();
+                        System.out.print("Masukkan kolom (1-2): ");
+                        kolom = sc.nextInt();
 
-                    if (kolom < 1 || kolom > 2) {
-                        System.out.println("Kolom tidak tersedia, hanya tersedia di rentang 1-2 saja!");
-                        System.out.println();
-                        break;
-                    }
+                        // validasi nomor kursi
+                        if (baris < 1 || baris > 4) {
+                            System.out.println("Baris tidak tersedia, hanya tersedia di rentang 1-4 saja!");
+                            System.out.println();
+                            break;
+                        }
 
-                    // validasi input data penonton
-                    if (penonton[baris - 1][kolom - 1] != null) {
-                        System.out.println("Kursi sudah terisi oleh: " + penonton[baris - 1][kolom - 1]);
-                    } else {
+                        if (kolom < 1 || kolom > 2) {
+                            System.out.println("Kolom tidak tersedia, hanya tersedia di rentang 1-2 saja!");
+                            System.out.println();
+                            break;
+                        }
+
+                        // validasi input data penonton
+                        if (penonton[baris - 1][kolom - 1] != null) {
+                            System.out.println("Kursi sudah terisi oleh: " + penonton[baris - 1][kolom - 1]);
+                            System.out.println("Silakan pilih pilih kursi lain.");
+                            continue; // ulang inpput sampai mendapatkan kursi kosong
+                        } 
+
+                        // apabila sampai sini, artinya kursi valid dan kosong
                         penonton[baris - 1][kolom - 1] = nama;
                         System.out.println("Data penonton berhasil ditambahkan!");
-                    }
-
-                    System.out.println();
-                    break;
+                        System.out.println();
+                        break;
+                }
+                break;
 
                 case 2:
                     // tampilkan data penonton
