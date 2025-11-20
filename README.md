@@ -78,3 +78,5 @@ Pertanyaan Percobaan 3
 for (int i = 0; i < myNumbers.length; i++) {
     System.out.println(Arrays.toString(myNumbers[i]));
 }
+2. Apa fungsi dari Arrays.toString()?
+Jawab : Arrays.toString() adalah method dari class java.util.Arrays yang digunakan untuk mengubah array menjadi bentuk string sehingga mudah dibaca manusia (human-readable). Arrays.toString() perlu digunakan karena java tidak bisa menampilkan isi array secara langsung.
