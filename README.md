@@ -71,3 +71,4 @@ Jawab : tidak, pengisian elemen array dari Scanner tidak harus dilakukan secara 
 - Menu 3: Exit
 3. Modifikasi kode program untuk menghandle apabila nomor baris/kolom kursi yang tidak tersedia
 4. Pada menu 1, modifikasi kode program untuk memberikan warning apabila kursi yang dipilih sudah terisi oleh penonton lainnya lalu munculkan perintah untuk memasukkan baris dan kolom kembali
+5. Pada menu 2, jika kursi kosong, ganti null dengan ***
