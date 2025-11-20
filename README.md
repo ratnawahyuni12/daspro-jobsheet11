@@ -82,3 +82,7 @@ for (int i = 0; i < myNumbers.length; i++) {
 Jawab : Arrays.toString() adalah method dari class java.util.Arrays yang digunakan untuk mengubah array menjadi bentuk string sehingga mudah dibaca manusia (human-readable). Arrays.toString() perlu digunakan karena java tidak bisa menampilkan isi array secara langsung.
 3. Apa nilai default untuk elemen pada array dengan tipe data int?
 Jawab : nilai default untuk elemen pada array dengan tipe data int adalah 0.
+4. Tambahkan kode program berikut
+for (int i = 0; i < myNumbers.length; i++) {
+    System.out.println("Panjang baris ke-" + (i+1) + ": " + myNumbers[i].length);
+}
