@@ -88,3 +88,6 @@ for (int i = 0; i < myNumbers.length; i++) {
 }
 5. Array myNumbers memiliki length berbeda untuk setiap barisnya. Apakah panjang array dapat dimodifikasi setelah diinstansiasi?
 Jawab : tidak bisa. setelah sebuah array di Java dibuat (diinstansiasi), panjang array tersebut bersifat tetap (fixed) dan tidak dapat diubah. Jika ingin mengubah panjangnya, harus membuat array baru dan menggantikan array lama, bukan memodifikasinya.
+
+Pertanyaan Percobaan 4
+1. Bagaimana jika terdapat perubahan jumlah siswa dan jumlah mata kuliah? Modifikasi kode program SIAKAD untuk mengakomodasi jumlah siswa dan jumlah mata kuliah yang dinamis.
